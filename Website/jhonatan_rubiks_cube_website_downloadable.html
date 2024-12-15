@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonatan Marte | The Rubik's Life</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: black;
+            color: white;
+        }
+        .rubiks-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 90vmin;
+            height: 90vmin;
+            margin: 2rem auto;
+            gap: 5px;
+            background-color: #222;
+            transform-style: preserve-3d;
+        }
+        .rubiks-grid div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+        /* Rubik's Cube Colors */
+        .tile1 { background: red; }
+        .tile2 { background: blue; }
+        .tile3 { background: yellow; }
+        .tile4 { background: green; }
+        .tile5 { background: orange; color: white; }
+        .tile6 { background: white; color: black; }
+        .tile7 { background: red; }
+        .tile8 { background: blue; }
+        .tile9 { background: green; }
+        .rubiks-grid div:hover {
+            transform: rotateY(180deg) scale(1.1);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: black;
+            color: white;
+        }
+        .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 1rem;
+            color: white;
+            background-color: #0073b1;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jhonatan Marte, MD</h1>
+        <p>Life as a Rubik's Cube: Balanced, Mindful, and Ever-Evolving</p>
+    </header>
+
+    <div class="rubiks-grid">
+        <div class="tile1">
+            <p>About Me</p>
+            <img src="https://example.com/JM_headshot.jpeg" alt="Jhonatan Marte Headshot">
+        </div>
+        <div class="tile2">
+            <p>Projects</p>
+            <img src="https://example.com/AC8E6157.jpeg" alt="Mindfulness Buddy">
+        </div>
+        <div class="tile3">
+            <p>Vision</p>
+        </div>
+        <div class="tile4">
+            <p>Mindfulness Buddy</p>
+            <img src="https://example.com/AC8E6157.jpeg" alt="The Mindfulness Buddy">
+        </div>
+        <div class="tile5">
+            <p>Innovation</p>
+        </div>
+        <div class="tile6">
+            <p>Creative Expression</p>
+        </div>
+        <div class="tile7">
+            <p>Contact</p>
+            <p>Email: <a href="mailto:jhonatan.marte@uchicagomedicine.org">jhonatan.marte@uchicagomedicine.org</a></p>
+        </div>
+        <div class="tile8">
+            <p>LinkedIn</p>
+            <a href="https://www.linkedin.com/in/jhonatan-marte-b6ab17340?trk=people-guest_people_search-card" target="_blank" class="cta">View Profile</a>
+        </div>
+        <div class="tile9">
+            <p>Download CV</p>
+            <a href="/mnt/data/CV%202024.pdf" download="Jhonatan_Marte_CV.pdf" class="cta">Download CV</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jhonatan Marte, MD. Inspired by the Rubik's Cube. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
